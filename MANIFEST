@@ -6,6 +6,7 @@ lib/Regexp/Log/Common.pm
 t/00basic.t
 t/10common.t
 t/90podtest.t
+t/91podcover.t
 t/common.log
 t/extended.log
 META.yml                                 Module meta-data (added by MakeMaker)

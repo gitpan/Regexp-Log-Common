@@ -4,7 +4,7 @@ use strict;
 use base qw( Regexp::Log );
 use vars qw( $VERSION %DEFAULT %FORMAT %REGEXP );
 
-$VERSION = 0.02;
+$VERSION = 0.03;
 
 =head1 NAME
 
@@ -205,12 +205,18 @@ be forthcoming, please feel free to (politely) remind me.
 BooK for initially putting the idea into my head, and the thread on a perl
 message board, that wanted the help that was solved with this exact module.
 
+=head1 DSLIP
+
+  b - beta
+  d - Developer
+  p - Perl only
+  O - Object oriented
+  p - Standard Perl
+
 =head1 AUTHOR
 
 Barbie C< <<barbie@cpan.org>> >
 for Miss Barbell Productions, L<http://www.missbarbell.co.uk>
-
-Birmingham Perl Mongers, L<http://birmingham.pm.org/>
 
 =head1 COPYRIGHT AND LICENSE
 

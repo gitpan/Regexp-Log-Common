@@ -11,7 +11,6 @@ cannot be simply split().
 
 For more information on how to use this module, please see Regexp::Log.
 
-
 LOG FORMATS
 
 Common Log Format
@@ -115,12 +114,19 @@ BooK for initially putting the idea into my head, and the thread on a perl
 message board, that wanted the help that was solved with this exact module.
 
 
+DSLIP
+
+  b - beta
+  d - Developer
+  p - Perl only
+  O - Object oriented
+  p - Standard Perl
+
+
 AUTHOR
 
 Barbie <<barbie@cpan.org>>
 for Miss Barbell Productions, http://www.missbarbell.co.uk
-
-Birmingham Perl Mongers, http://birmingham.pm.org/
 
 
 COPYRIGHT AND LICENSE
