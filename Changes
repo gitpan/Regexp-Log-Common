@@ -1,5 +1,9 @@
 Revision history for Perl extension Regexp::Log::Common
 
+0.02  01/03/2005
+        - fix for numeric or named remote host (Duane Wessels)
+        - fix for bytes (304 responses) (Duane Wessels)
+
 0.01  21/01/2005
         - original version
         - this module uses the base class of Regexp::Log

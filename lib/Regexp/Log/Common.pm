@@ -4,7 +4,7 @@ use strict;
 use base qw( Regexp::Log );
 use vars qw( $VERSION %DEFAULT %FORMAT %REGEXP );
 
-$VERSION = 0.01;
+$VERSION = 0.02;
 
 =head1 NAME
 
@@ -75,8 +75,9 @@ by the httpd web server using the keyword 'common'.
 
 # the regexps that match the various fields
 %REGEXP = (
-	'%host' => '(?#=host)\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(?#!host)',	
-													# remote host
+#	'%host' => '(?#=host)\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(?#!host)',
+													# IPv4 only
+	'%host' => '(?#=host)\S+(?#!host)',				# numeric or name of remote host
 	'%rfc' => '(?#=rfc).*?(?#!rfc)',				# rfc931
 	'%authuser' => '(?#=authuser).*?(?#!authuser)',	# authuser
 	'%date' => '(?#=date)\[(?#=ts)\d{2}\/\w{3}\/\d{4}(?::\d{2}){3} [-+]\d{4}(?#!ts)\](?#!date)',
