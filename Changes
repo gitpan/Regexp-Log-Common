@@ -1,0 +1,5 @@
+Revision history for Perl extension Regexp::Log::Common
+
+0.01  21/01/2005
+        - original version
+        - this module uses the base class of Regexp::Log
