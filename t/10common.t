@@ -1,4 +1,4 @@
-use Test::More tests => 45;
+use Test::More tests => 46;
 use strict;
 use Regexp::Log::Common;
 use IO::File;
@@ -121,6 +121,17 @@ my @data = (
 		req => 'GET /brum.css HTTP/1.1',
 		status => 304,
 		bytes => 0
+    },
+    {
+		host => '127.0.0.1',
+		rfc => '-',
+		authuser => '-',
+		date => '[19/Jan/2005:21:47:11 +0000]',
+		ts => '19/Jan/2005:21:47:11 +0000',
+		request => '"GET /brum.css HTTP/1.1"',
+		req => 'GET /brum.css HTTP/1.1',
+		status => 304,
+		bytes => '-'
     },
 );
 

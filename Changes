@@ -1,5 +1,8 @@
 Revision history for Perl extension Regexp::Log::Common
 
+0.04    28/04/2005
+        - bytes can also be '-' instead of 0 (Salvador Fandiño García)
+
 0.03    21/03/2005
 	- added POD coverage test script
 	- updated POD

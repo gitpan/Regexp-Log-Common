@@ -4,7 +4,7 @@ use strict;
 use base qw( Regexp::Log );
 use vars qw( $VERSION %DEFAULT %FORMAT %REGEXP );
 
-$VERSION = 0.03;
+$VERSION = 0.04;
 
 =head1 NAME
 
@@ -85,7 +85,7 @@ by the httpd web server using the keyword 'common'.
 	'%request' => '(?#=request)\"(?#=req).*?(?#!req)\"(?#!request)',
 													# "request"
 	'%status' => '(?#=status)\d+(?#!status)',		# status
-	'%bytes' => '(?#=bytes)\d+(?#!bytes)',			# bytes
+	'%bytes' => '(?#=bytes)-|\d+(?#!bytes)',		# bytes
 	'%referer' => '(?#=referer)\"(?#=ref).*?(?#!ref)\"(?#!referer)',
 													# "referer"
 	'%useragent' => '(?#=useragent)\"(?#=ua).*?(?#!ua)\"(?#!useragent)',
@@ -215,7 +215,7 @@ message board, that wanted the help that was solved with this exact module.
 
 =head1 AUTHOR
 
-Barbie C< <<barbie@cpan.org>> >
+Barbie <barbie@cpan.org>
 for Miss Barbell Productions, L<http://www.missbarbell.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
