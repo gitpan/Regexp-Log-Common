@@ -1,12 +1,16 @@
+Artistic
 Changes
+LICENSE
 MANIFEST
+META.yml
 Makefile.PL
 README
+examples/examples.txt
 lib/Regexp/Log/Common.pm
 t/00basic.t
 t/10common.t
 t/90podtest.t
 t/91podcover.t
+t/94metatest.t
 t/common.log
 t/extended.log
-META.yml                                 Module meta-data (added by MakeMaker)

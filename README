@@ -96,11 +96,15 @@ BUGS, PATCHES & FIXES
 
 There are no known bugs at the time of this release. However, if you spot a
 bug or are experiencing difficulties that are not explained within the POD
-documentation, please send an email to barbie@cpan.org. However, it would 
-help greatly if you are able to pinpoint problems or even supply a patch. 
+documentation, please submit a bug to the RT system (see link below). However,
+it would help greatly if you are able to pinpoint problems or even supply a 
+patch. 
 
 Fixes are dependant upon their severity and my availablity. Should a fix not
-be forthcoming, please feel free to (politely) remind me.
+be forthcoming, please feel free to (politely) remind me by sending an email
+to barbie@cpan.org .
+
+RT: http://rt.cpan.org/Public/Dist/Display.html?Name=Regexp-Log-Common
 
 
 SEE ALSO
@@ -131,9 +135,11 @@ for Miss Barbell Productions, http://www.missbarbell.co.uk
 
 COPYRIGHT AND LICENSE
 
-  Copyright 2005 by Barbie for Miss Barbell Productions.
-  All rights reserved.
+Copyright © 2005-2007 Barbie for Miss Barbell Productions.
 
-  This library is free software; you can redistribute it and/or modify
-  it under the same terms as Perl itself. 
+This library is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself, using the Artistic License.
 
+The full text of the licenses can be found in the Artistic file included with 
+this distribution, or in perlartistic file as part of Perl installation, in 
+the 5.8.1 release or later.
