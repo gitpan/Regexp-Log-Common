@@ -1,5 +1,8 @@
+#!/usr/bin/perl -w
+use strict;
+
 use Test::More tests => 1;
 
 BEGIN {
-	use_ok Regexp::Log::Common;
+	use_ok( 'Regexp::Log::Common' );
 }

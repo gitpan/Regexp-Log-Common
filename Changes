@@ -1,5 +1,19 @@
 Revision history for Perl extension Regexp::Log::Common
 
+0.06    15/07/2012
+	- added examples/logparser.pl
+	- fixed documentation (Andrew Ford)
+	- amended additional tests to check $ENV{AUTOMATED_TESTING}
+	- spelling fix. (thanks to Florian Schlichting & Gregor Herrmann).
+	- added minimum perl version (5.006).
+	- META tests no longer require specific versions.
+        - License updated to Artistic License v2.0.
+        - removed Artistic file.
+        - added META.json and test script.
+	- added missing IO::File pre-requisite.
+        - remove DSLIP info, as its no longer used.
+        - reworked Makefile.PL for clarity.
+
 0.05    02/03/2007
 	- Handwritten META.yml to conform to current specs.
 	- Changed all instances of LICENCE to LICENSE.

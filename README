@@ -100,7 +100,7 @@ documentation, please submit a bug to the RT system (see link below). However,
 it would help greatly if you are able to pinpoint problems or even supply a 
 patch. 
 
-Fixes are dependant upon their severity and my availablity. Should a fix not
+Fixes are dependent upon their severity and my availability. Should a fix not
 be forthcoming, please feel free to (politely) remind me by sending an email
 to barbie@cpan.org .
 
@@ -111,35 +111,19 @@ SEE ALSO
 
   Regexp::Log
 
-
 CREDITS
 
 BooK for initially putting the idea into my head, and the thread on a perl
 message board, that wanted the help that was solved with this exact module.
-
-
-DSLIP
-
-  b - beta
-  d - Developer
-  p - Perl only
-  O - Object oriented
-  p - Standard Perl
-
 
 AUTHOR
 
 Barbie <<barbie@cpan.org>>
 for Miss Barbell Productions, http://www.missbarbell.co.uk
 
-
 COPYRIGHT AND LICENSE
 
-Copyright © 2005-2007 Barbie for Miss Barbell Productions.
+Copyright © 2005-2012 Barbie for Miss Barbell Productions.
 
-This library is free software; you can redistribute it and/or modify it under
-the same terms as Perl itself, using the Artistic License.
-
-The full text of the licenses can be found in the Artistic file included with 
-this distribution, or in perlartistic file as part of Perl installation, in 
-the 5.8.1 release or later.
+This module is free software; you can redistribute it and/or
+modify it under the Artistic License v2.

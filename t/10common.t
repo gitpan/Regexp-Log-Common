@@ -1,5 +1,7 @@
-use Test::More tests => 46;
+#!/usr/bin/perl -w
 use strict;
+
+use Test::More tests => 46;
 use Regexp::Log::Common;
 use IO::File;
 
