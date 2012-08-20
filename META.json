@@ -1,6 +1,6 @@
 {
     "name": "Regexp-Log-Common",
-    "version": "0.06",
+    "version": "0.07",
     "abstract": "Enables simple parsing of (Extended) Common Log Format log files.",
     "author": ["Barbie <barbie@cpan.org>"],
 
@@ -43,7 +43,7 @@
     "provides": {
         "Regexp::Log::Common": {
             "file": "lib/Regexp/Log/Common.pm",
-            "version": "0.06"
+            "version": "0.07"
         }
     },
     "no_index": {
