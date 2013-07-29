@@ -62,12 +62,8 @@ address to provide some stats.
 
   Copyright © 2005-2007 Barbie for Miss Barbell Productions.
 
-  This library is free software; you can redistribute it and/or modify it under
-  the same terms as Perl itself, using the Artistic License.
-
-The full text of the licenses can be found in the Artistic file included with
-this distribution, or in perlartistic file as part of Perl installation, in
-the 5.8.1 release or later.
+  This distribution is free software; you can redistribute it and/or
+  modify it under the Artistic Licence v2.
 
 =cut
 
