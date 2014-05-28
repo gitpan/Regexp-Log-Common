@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                   Regexp-Log-Common
-version:                0.08
+version:                0.09
 abstract:               Enables simple parsing of (Extended) Common Log Format log files.
 author:
   - Barbie <barbie@cpan.org>
@@ -25,7 +25,7 @@ build_requires:
 provides:
   Regexp::Log::Common:
     file:     lib/Regexp/Log/Common.pm
-    version:  0.08
+    version:  0.09
 no_index:
   directory:
     - t
@@ -34,6 +34,8 @@ no_index:
 resources:
   license:    http://www.perlfoundation.org/artistic_license_2_0
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Regexp-Log-Common
+  repository: http://github.com/barbie/regexp-log-common
+
 
 meta-spec:
    version:   1.4

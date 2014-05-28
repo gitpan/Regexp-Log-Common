@@ -1,5 +1,5 @@
-Regexp::Log::Common
--------------------
+Regexp-Log-Common
+=================
 
 Regexp::Log::Common enables simple parsing of log files created using the
 Common Log Format or the Extended Common Log Format, such as the logs generated
@@ -13,84 +13,54 @@ For more information on how to use this module, please see Regexp::Log.
 
 LOG FORMATS
 
-Common Log Format
+The Common Log Format is made up of several fields to record requests and
+responses by a webserver. There are two traditional layouts, refered to as the
+common and extended layouts. However, you may wish to create a log format of
+your own, using the field specifiers as defined by the Common Log Format
+Specification [1]. 
+
+With this module you may define your log format as common or extended, for
+example:
 
     my $foo = Regexp::Log::Common->new( format  => ':common' );
 
-The Common Log Format is made up of several fields, each delimited by a single
-space.
+or you can define your own format, such as:
 
-* Fields:
+    my $foo = Regexp::Log::Common->new(
+        format  => '%host %rfc %authuser %date %request %status %bytes' .
+                   '%referer %useragent %time %servername',
+        capture => [qw( host rfc authuser ts request status bytes
+                        referer useragent time servername)],
+    );
 
-  remotehost rfc931 authuser [date] "request" status bytes
+[1] see http://httpd.apache.org/docs/2.2/mod/mod_log_config.html#formats
 
-* Example:
+INSTALLATION
 
-  127.0.0.1 - - [19/Jan/2005:21:47:11 +0000] "GET /brum.css HTTP/1.1" 304 0
+To install this module type the following:
 
-  For the above example:
-  remotehost: 127.0.0.1
-  rfc931: -
-  authuser: -
-  [date]: [19/Jan/2005:21:47:11 +0000]
-  "request": "GET /brum.css HTTP/1.1"
-  status: 304
-  bytes: 0
+   perl Makefile.PL
+   make
+   make test
+   make install
 
-* Available Capture Fields
+DEPENDENCIES
 
-  * host
-  * rfc
-  * authuser
-  * date
-  ** ts (date without the [])
-  * request
-  ** req (request without the quotes)
-  * status
-  * bytes
+This module requires these modules:
 
-Extended Common Log Format
+  Regexp::Log
 
-    my $foo = Regexp::Log::Common->new( format  => ':extended' );
+For testing the module requires these modules:
 
-The Extended Common Log Format is made up of several fields, each delimited by
-a single space.
+  IO::File
+  Test::More
 
-* Fields:
+For optional testing the module would like these modules:
 
-  remotehost rfc931 authuser [date] "request" status bytes "referer" "user_agent"
-
-* Example:
-
-  127.0.0.1 - - [19/Jan/2005:21:47:11 +0000] "GET /brum.css HTTP/1.1" 304 0 "http://birmingham.pm.org/" "Mozilla/2.0GoldB1 (Win95; I)"
-
-  For the above example:
-  remotehost: 127.0.0.1
-  rfc931: -
-  authuser: -
-  [date]: [19/Jan/2005:21:47:11 +0000]
-  "request": "GET /brum.css HTTP/1.1"
-  status: 304
-  bytes: 0
-  "referer": "http://birmingham.pm.org/"
-  "user_agent": "Mozilla/2.0GoldB1 (Win95; I)"
-
-* Available Capture Fields
-
-  * host
-  * rfc
-  * authuser
-  * date
-  ** ts (date without the [])
-  * request
-  ** req (request without the quotes)
-  * status
-  * bytes
-  * referer
-  ** ref (referer without the quotes)
-  * useragent
-  ** ua (useragent without the quotes)
-
+  Test::CPAN::Meta
+  Test::CPAN::Meta::JSON
+  Test::Pod
+  Test::Pod::Coverage
 
 BUGS, PATCHES & FIXES
 
@@ -106,16 +76,6 @@ to barbie@cpan.org .
 
 RT: http://rt.cpan.org/Public/Dist/Display.html?Name=Regexp-Log-Common
 
-
-SEE ALSO
-
-  Regexp::Log
-
-CREDITS
-
-BooK for initially putting the idea into my head, and the thread on a perl
-message board, that wanted the help that was solved with this exact module.
-
 AUTHOR
 
 Barbie <<barbie@cpan.org>>
@@ -123,7 +83,7 @@ for Miss Barbell Productions, http://www.missbarbell.co.uk
 
 COPYRIGHT AND LICENSE
 
-Copyright © 2005-2011 Barbie for Miss Barbell Productions.
+  Copyright (C) 2005-2014 Barbie for Miss Barbell Productions
 
-This distribution is free software; you can redistribute it and/or
-modify it under the Artistic License v2.
+  This distribution is free software; you can redistribute it and/or
+  modify it under the Artistic Licence v2.

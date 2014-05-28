@@ -1,4 +1,12 @@
-Revision history for Perl extension Regexp::Log::Common
+Revision history for Regexp-Log-Common
+======================================
+
+0.09    2014-05-28
+        - fixed distribution name in META.
+        - extended support of more LogFormat fields.
+        - overhaul of documentation
+        - move test data file into their own directory.
+        - added git repository links to metadata.
 
 0.08	2013-07-29
         - change file dates changed to meet W3CDTF standards.

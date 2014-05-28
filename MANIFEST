@@ -15,5 +15,6 @@ t/91podcover.t
 t/94metatest.t
 t/95changedate.t
 t/96metatest.t
-t/common.log
-t/extended.log
+t/data/common.log
+t/data/custom.log
+t/data/extended.log

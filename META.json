@@ -1,6 +1,6 @@
 {
     "name": "Regexp-Log-Common",
-    "version": "0.08",
+    "version": "0.09",
     "abstract": "Enables simple parsing of (Extended) Common Log Format log files.",
     "author": ["Barbie <barbie@cpan.org>"],
 
@@ -43,7 +43,7 @@
     "provides": {
         "Regexp::Log::Common": {
             "file": "lib/Regexp/Log/Common.pm",
-            "version": "0.08"
+            "version": "0.09"
         }
     },
     "no_index": {
@@ -52,6 +52,11 @@
 
     "resources": {
         "license": "http://www.perlfoundation.org/artistic_license_2_0",
-        "bugtracker": { "web": "http://rt.cpan.org/Public/Dist/Display.html?Name=Regexp-Log-Common" }
+        "bugtracker": { "web": "http://rt.cpan.org/Public/Dist/Display.html?Name=Regexp-Log-Common" },
+        "repository": {
+            "url": "git://github.com/barbie/regexp-log-common.git",
+            "web": "http://github.com/barbie/regexp-log-common",
+            "type": "git"
+        }
     }
 }
