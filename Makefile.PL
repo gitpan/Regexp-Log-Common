@@ -8,7 +8,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     AUTHOR              => 'Barbie <barbie@cpan.org>',
-    NAME                => 'Regexp-Log-Common',
+    NAME                => 'Regexp::Log::Common',
     VERSION_FROM        => 'lib/Regexp/Log/Common.pm',
     ABSTRACT_FROM       => 'lib/Regexp/Log/Common.pm',
     NO_META             => 1,

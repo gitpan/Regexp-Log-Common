@@ -5,7 +5,7 @@ use strict;
 use base qw( Regexp::Log );
 use vars qw( $VERSION %DEFAULT %FORMAT %REGEXP );
 
-$VERSION = 0.09;
+$VERSION = '0.10';
 
 =head1 NAME
 
@@ -346,8 +346,8 @@ or
 
 =head1 FORMAT FIELDS
 
-There are several format fields available, although this module does not them
-all. The ones it does currently support are as follows:
+There are several format fields available, although this module does not 
+support them all. The ones it does currently support are as follows:
 
     shorthand       => longhand (if applicable)
 
